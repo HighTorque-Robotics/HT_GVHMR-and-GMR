@@ -1,7 +1,7 @@
-# GVHMR & GMR 项目整合与使用指南
+# HT_GVHMR & GMR 项目整合与使用指南
 
 ## 📌 项目简介
-本项目整合 **GMR（人体运动重定向）** 与 **GVHMR（视频人体姿态与形状估计）** 两大核心模块，实现「视频人体姿态提取 → 人体运动重定向」的端到端完整流程，得到的BVH文件可直接应用于[模仿学习风格化舞蹈动作训练](https://github.com/HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic)训练流程进行训练。
+本项目整合 **GMR（人体运动重定向）** 与 **GVHMR（视频人体姿态与形状估计）** 两大核心模块，实现「视频人体姿态提取 → 人体运动重定向」的端到端完整流程，得到的BVH文件可直接应用于高擎派+[模仿学习风格化舞蹈动作训练](https://github.com/HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic)流程进行训练。
 
 - **GVHMR**：接收视频输入，完成人体姿态、形状、骨架信息的提取与输出
 - **GMR**：基于提取的骨架数据，实现高精度人体运动重定向，支持标准 BVH 动作文件处理
