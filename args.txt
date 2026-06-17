@@ -1,0 +1,16 @@
+conda create -n gmr_opensource python=3.10 -y
+conda activate gmr_opensource
+
+pip install -e .
+conda install -c conda-forge libstdcxx-ng -y
+
+
+GMR重定向命令：详见GMR/README_unified.md
+
+针对GVHMR提取后：
+python GMR/scripts/gvhmr_to_robot.py \
+    --gvhmr_pred_file GVHMR/outputs/demo/head_test/hmr4d_results.pt \
+    --robot pi_plus_head \
+    --save_path GMR/Retarget/pi_plus/head_test.csv \
+    --rate_limit \
+    --record_video
